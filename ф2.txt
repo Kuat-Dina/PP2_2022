@@ -1,0 +1,12 @@
+x=[] 
+for i in range(int(input("How many elements are in list : "))): 
+    x.append(int(input()))
+    print(x)
+
+array = []
+while True:
+     array.append(int(input()))
+     print(array)
+
+     
+    

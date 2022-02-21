@@ -1,0 +1,14 @@
+n=int(input())
+for t in range(n):
+    t=int(input())
+    if(t<=10):
+        print("Go to work!")
+    elif(t>10 or t<=25):
+        print("You are weak")
+    elif(t>25 or t<=45):
+        print("Okay, fine")
+    elif(t>45):
+        print("Burn! Burn! Burn Young!")
+        
+       
+    

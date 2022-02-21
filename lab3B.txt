@@ -1,0 +1,6 @@
+a = int(input())
+b = input().split()
+for n in range(a):
+    b[n] = int(b[n])
+b.sort()
+print(b[n]*b[n-1])

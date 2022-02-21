@@ -1,0 +1,13 @@
+k = input().split()
+n = int(k[0])
+if len(k)==1:
+    x = int(input())
+else:
+    x = int(k[1])
+arr=[]
+for i in range(n):
+    arr.append(x+2*i)
+a = arr[0]
+for i in range(n-1):
+    a = a ^ arr[i+1]
+print (a)

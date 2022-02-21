@@ -1,0 +1,20 @@
+dic = {}
+n = int(input())
+max = 0
+for i in range(n):
+    a = input().split()
+    name = a[0]
+    compensation = int(a[1])
+    if name in dic:
+        dic[name] = dic[name] + compensation
+    else:
+        dic[name] =  compensation
+for x in dic:
+    if max < dic[x]:
+        max = dic[x]
+sorted=sorted(dic.keys())
+for i in range(len(dic)):
+    if dic[sorted[i]]==max:
+        print(sorted[i] + " is lucky!")
+    else:
+        print(sorted[i] + " has to receive " + str(max - dic[sorted[i]]) + " tenge")

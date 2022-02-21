@@ -1,0 +1,29 @@
+n = input().split()
+x = int(line[0])
+y = int(line[1])
+s = []
+dist = []
+
+
+a = int(input())
+for i in range(a):
+    n = input().split()
+    x1 = int(line[0])
+    y1 = int(line[1])
+    c = (x1-x)*(x1-x) + (y1-y)*(y1-y)
+    field.append(x1)
+    field.append(y1)
+    field.append(c)
+
+for i in range(3*a):
+    if i%3 == 2:
+        dist.append(s[i])
+
+dist.sort()
+
+for i in range(a):
+    for j in range(3*a):
+        if j%3 == 2:
+            if dist[i] == s[j]:
+                print(s[j-2], s[j-1])
+                dist[i] = 999999999999

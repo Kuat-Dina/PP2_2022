@@ -1,10 +1,19 @@
-import random
+n = input().split()
+l = len(n)
+arr = []
 
-a=map(int,input().split())
-for i in a:
-    if i!=0:
-       m=random.randrange(0,a[0]))
-       print(m)
-    else:
-        print(i)
-    
+for i in range(l):
+    n[i] = int(n[i])
+    arr.append(0)
+arr[0] = 1
+
+for i in range(l):
+    if arr[i] == 1:
+        a = n[i]
+        while a>0:
+            if i + a>l-1:
+                a = a-1
+            else:
+                arr[i+a] = 1
+                a = a - 1
+print(arr[l-1])

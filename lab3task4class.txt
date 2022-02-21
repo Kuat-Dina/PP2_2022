@@ -1,0 +1,28 @@
+class Point:
+    def __init__(self, *args):
+        self.__coords = args
+        self.__dim = len(args)
+
+    def show(self):
+        return self.__coords
+    
+    def move(self, *args):
+        self.__coords = args
+        self.__dim = len(args)
+    
+    def dist(self, obj):
+        if self.__dim != obj.__dim:
+            return f"Can not compute distance! Dimensions of points are {self.__dim} and {obj.__dim}."
+        return sum(map(lambda x, y: (x-y)**2, self.__coords, obj.__coords)) ** 0.5
+
+if __name__ == "__main__":
+    a = Point(1, 2)
+    b = Point(0, 0)
+    print(f"Coordinates of point a: {a.show()}")
+    print(f"Coordinates of point b: {b.show()}")
+    b.move(0, 1)
+    print(f"Coordinates of point b: {b.show()}")
+    print(f"Distance from point a to point b: {a.dist(b)}")
+    c = Point(0, 0, 0)
+    print(f"Coordinates of point c: {c.show()}")
+    print(f"Distance from point a to point c: {a.dist(c)}")

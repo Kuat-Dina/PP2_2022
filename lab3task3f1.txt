@@ -1,0 +1,10 @@
+def solve(numheads: int, numlegs: int):
+    num_chickens = 2*numheads - numlegs//2
+    num_rabbits = numheads - num_chickens
+    return {"chickens": num_chickens, "rabbits": num_rabbits}
+
+if __name__ == "__main__":
+    numheads = int(input("Number of heads is: "))
+    numlegs = int(input("Number of legs is: "))
+    res = solve(numheads, numlegs)
+    print(f'There are {res["chickens"]} chickens and {res["rabbits"]} rabbits')

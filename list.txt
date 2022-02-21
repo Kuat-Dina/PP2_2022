@@ -1,0 +1,72 @@
+thislist = ["apple", "banana", "cherry"]
+
+thislist.append("orange")
+
+print(thislist)
+
+thislist.insert(1, "orange")
+print(thislist)
+
+tropical = ["mango", "pineapple", "papaya"]
+
+thislist.extend(tropical)
+
+print(thislist)
+
+thistuple = ("kiwi", "orange")
+
+thislist.extend(thistuple)
+
+print(thislist)
+
+#Remove Specified Item
+thislist.remove("banana")#removes only the first appeared element 
+print(thislist)
+
+#Remove Index
+thislist.pop(1)
+print(thislist) 
+
+thislist.pop()#removes the last element 
+print(thislist)
+
+#DELETE
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+
+#DELETE complitely
+thislist = ["apple", "banana", "cherry"]
+del thislist
+print(thislist) #this will cause an error because you have succsesfully deleted "thislist".
+
+#CLEAR 
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)# the output will be the emty list without an error
+
+#Loop
+thislist = ["apple", "banana", "cherry"]
+for x in thislist:
+  print(x)
+
+#Loop from index
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+#Loop from while
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+#Loop for
+thislist = ["apple", "banana", "cherry"]
+[print(x) for x in thislist]
+
+
+
+
+

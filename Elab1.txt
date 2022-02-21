@@ -1,9 +1,7 @@
 n=int(input())
 f=int(input())
 if(n<=500):
-    if(f%2==0):
-        print("Good job!")
-    else:
-        print("Try next time!")
-else:
-     print("Try next time!")
+    if(f%2==0): 
+        print("Good job!") 
+    else: print("Try next time!") 
+else: print("Try next time!") 
