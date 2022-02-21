@@ -1,0 +1,7 @@
+a={
+    'id': '21b021512',
+    'name':'Student1',
+    'age': 18,
+    'gpa': 4.0
+} 
+print(a['name'])

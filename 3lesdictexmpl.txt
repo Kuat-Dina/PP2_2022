@@ -1,0 +1,9 @@
+a=['hello','aabs','hello','aabs','debt']
+d=dict()
+for s in a:
+    if s not in d:
+        d[s]=0
+    d[s]+=1
+for key in d:
+    print(key,d[key])#key is a word, d[key] is the number of repetitions 
+    

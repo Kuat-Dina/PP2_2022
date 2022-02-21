@@ -1,0 +1,12 @@
+a=['hello','aabs','hello','aabs','debt']
+d=dict()
+for s in a:
+    if s not in d:#the method to recognizing is the key(word) in dictionary
+        d[s]=0
+    d[s]+=1
+for key in d:
+    print(key,d[key])#key is a word, d[key] is the number of repetitions:the way to run by values 
+    
+d.pop('hello')#pop=delete key(word)
+print(d)
+    

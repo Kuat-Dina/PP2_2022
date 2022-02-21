@@ -1,0 +1,2 @@
+a=dict(id='21B0564',name='student 1', age=18, gpa=4.0)
+print(a['name'])

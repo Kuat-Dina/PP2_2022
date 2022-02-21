@@ -1,0 +1,4 @@
+a=dict()
+a['id']='21B051214'
+a['name']='Name'
+print(a['name'])

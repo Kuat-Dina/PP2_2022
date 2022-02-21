@@ -1,0 +1,16 @@
+a=5**3
+print(a)
+b=5#101
+b<<=3#move to the right the number appending zeroes in the end (101000)
+print(b)
+c=15#1111
+c>>=2#11
+print(c)
+
+d=15#1111
+e=1#0001
+d^=e#XOR
+print(d)
+d=15
+d&=e#XAND
+print(d)

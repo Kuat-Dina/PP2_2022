@@ -1,0 +1,8 @@
+n=int(input())
+arr=[]
+for i in range(n):
+    s=[int(n) for n in input().split(' ')]
+    arr.append(s)
+for row in arr:
+    print(row)#print as a list of rows on every row  
+print(arr)#printing in a row the list of row lists' of matrix

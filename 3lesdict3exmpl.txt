@@ -1,0 +1,14 @@
+a=['hello','aabs','hello','aabs','debt']
+d=dict()
+for s in a:
+    if s not in d:#the method to recognizing is the key(word) in dictionary
+        d[s]=0
+    d[s]+=1
+for key in d:
+    print(key,d[key])#key is a word, d[key] is the number of repetitions:the way to run by values 
+    
+print(d.keys())#key(word)
+print(d.values())#the number of repetitions
+print(d.items())#key,value
+for key, value in d.items():
+    print(f'{key}--->{value}')#can print without f''({0}-{1}), "f" indicates which variables to print in {}
