@@ -1,0 +1,13 @@
+import datetime 
+x=datetime.datetime.now()
+y=x.day - 1
+print(y, end=" ")
+print(x.strftime("%B"), "yesterday")
+print(y.strftime("%A"))
+print(x.day, end=" ")
+print(x.strftime("%B"), 'today')
+print(y.strftime("%A"))
+y=x.day +1
+print(y, end=" ")
+print(x.strftime("%B"), 'tomorrow')
+print(y.strftime("%A"))

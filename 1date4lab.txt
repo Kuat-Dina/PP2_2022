@@ -1,0 +1,5 @@
+import datetime 
+x=datetime.datetime.now()
+y=x.day - 5
+print(y, end=" ")
+print(x.strftime("%B"))
