@@ -1,0 +1,6 @@
+import re
+txt = str(input())
+cond="ab{2,3}"
+x = re.findall(cond, txt)
+for i in x:
+    print(i)
