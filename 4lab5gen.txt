@@ -1,0 +1,8 @@
+def do(m,i):
+    while m>i:
+        m-=1
+        yield m
+    
+m=int(input())
+i=0
+print(*do(m,i))

@@ -1,0 +1,8 @@
+import math
+def squeres(san1,san2):
+    for i in range(san1,san2):
+            yield round(math.sqrt(i),2)
+san1,san2=input().split()
+san1=int(san1)
+san2=int(san2)
+print(*squeres(san1,san2))

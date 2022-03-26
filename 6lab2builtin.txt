@@ -1,0 +1,11 @@
+str=input()
+cnt1=0;i=0;cnt2=0
+while i<len(str):
+    if str[i].isupper():
+        cnt1+=1
+        i+=1
+    elif str[i].islower():
+        cnt2+=1
+        i+=1
+myorder="{0} {1}"
+print(myorder.format(cnt1,cnt2))

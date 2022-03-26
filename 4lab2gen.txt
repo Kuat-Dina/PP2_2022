@@ -1,0 +1,16 @@
+import timeit
+def ruin(num):
+    for i in range(num):
+        if(i%2==0):
+            if i==num-2 :
+                yield str(i)+'.'
+            elif i==num-1:
+                yield str(i)+'.'
+            else:
+                yield str(i)+','
+num=int(input())
+print(*ruin(num)) 
+"""
+elapsed = timeit.timeit(code, number=100)/100
+print(elapsed)
+"""

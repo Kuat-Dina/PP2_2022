@@ -1,0 +1,2 @@
+tuple1 = (True,True,True)
+print(all(tuple1))

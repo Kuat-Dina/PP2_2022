@@ -1,0 +1,9 @@
+import time
+import math
+a=int(input())
+t=int(input())
+m=t/1000
+squre=math.sqrt(a)
+time.sleep(m)
+order="Square root of {0} after {1} miliseconds is {2}"
+print(order.format(a,t,squre))

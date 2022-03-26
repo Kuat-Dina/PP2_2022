@@ -1,0 +1,7 @@
+import math
+pi=math.pi
+num=int(input('Input number of sides:'))
+leng=int(input('Input the length of a side:'))
+tan=int(math.tan(180/num));form=int((num*leng*leng)/4*tan)
+print('The area of the polygon is:'+str(form))
+#print(math.ceil(math.tan(pi/4)))

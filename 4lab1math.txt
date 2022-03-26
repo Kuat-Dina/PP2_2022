@@ -1,0 +1,8 @@
+import math
+num=int(input('Input degree:'))
+pi=math.pi
+n=(num*pi)/180
+n=round(n,6)
+#print(pi)
+print('Output radian:'+ str(n))
+#gtad=(180/pi)*rad

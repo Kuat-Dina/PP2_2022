@@ -1,0 +1,8 @@
+import math
+pi=math.pi
+high=int(input('Height:'))
+bas1=int(input('Base, first value:'))
+bas2=int(input('Base, second value:'))
+form=((bas1+bas2)/2)*high
+form=round(form,1)
+print('Expected Output:'+str(form))

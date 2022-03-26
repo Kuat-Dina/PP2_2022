@@ -1,0 +1,6 @@
+def or_34(san):
+    for i in range(san):
+        if(i%3==0 and i%4==0):
+            yield i
+san=int(input())
+print(*or_34(san))

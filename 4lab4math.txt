@@ -1,0 +1,6 @@
+import math
+pi=math.pi
+bas=int(input('Length of base:'))
+high=int(input('Height of parallelogram:'))
+form=float(bas*high)
+print('Expected Output:'+str(form))

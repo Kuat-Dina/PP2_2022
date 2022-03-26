@@ -1,0 +1,10 @@
+def pald(palind):
+    pal=""
+    for i in range(len(palind)):
+        pal+=palind[len(palind)-i-1]
+    if pal==palind:
+        print("Yes")
+    else:
+        print("No")
+palind=str(input())
+pald(palind)
