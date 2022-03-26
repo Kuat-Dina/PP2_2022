@@ -1,0 +1,5 @@
+import re
+hum=input()
+pattern=re.split(r"[A-Z]",hum)
+for i in pattern:
+    print(i)

@@ -1,0 +1,11 @@
+ans = []
+while(True):
+	s = input()
+	if(len(s) == 1):
+		break
+	d, m, y = s.split()
+	ans.append((y, m, d))
+ans.sort()
+for i in ans:
+	y, m, d = i 
+	print(d, m, y)

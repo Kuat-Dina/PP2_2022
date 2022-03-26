@@ -1,0 +1,47 @@
+f, s = input().split('+')
+di = {
+	'ONE': '1',
+	'TWO': '2',
+	'THR': '3',
+	'FOU': '4',
+	'FIV': '5',
+	'SIX': '6',
+	'SEV': '7',
+	'EIG': '8',
+	'NIN': '9',
+	'ZER': '0'
+}
+di2 = {
+	'1': 'ONE',
+	'2': 'TWO',
+	'3': 'THR',
+	'4': 'FOU',
+	'5': 'FIV',
+	'6': 'SIX',
+	'7': 'SEV',
+	'8': 'EIG',
+	'9': 'NIN',
+	'0': 'ZER'
+}
+def tonum(st):
+	return di[st]
+def toalp(st):
+	return di2[st]
+
+a = []
+for i in range(0, len(f), 3):
+	ss = f[i] + f[i+1] + f[i+2]
+	a.append(ss)
+b = []
+for i in range(0, len(s), 3):
+	ss = s[i] + s[i+1] + s[i+2]
+	b.append(ss)
+num = map(tonum, a)
+num2 = map(tonum, b)
+x = ''.join(num)
+y = ''.join(num2)
+ans = int(x) + int(y)
+ans = list(str(ans))
+alp = map(toalp, ans)
+final = ''.join(alp)
+print(final)

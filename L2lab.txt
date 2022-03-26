@@ -1,0 +1,17 @@
+s = input()
+ls = []
+for i in s:
+	if len(ls) == 0:
+		ls.append(i)
+	elif i == '(' or i == '{' or i == '[':
+		ls.append(i)
+	else:
+		if (i == ')' and ls[-1] == '(') or (i == ']' and ls[-1] == '[') or (i == '}' and ls[-1] == '{'):
+			ls.pop()
+		else:
+			ls.append(i)
+if len(ls) == 0:
+	print('Yes')
+else:
+	print('No')
+#print(ls)

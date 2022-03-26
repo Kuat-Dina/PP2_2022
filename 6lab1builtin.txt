@@ -1,0 +1,15 @@
+"""
+list=[1,2,3,4,5]
+a=sum(list)
+print(a)
+"""
+def multiple(wn):
+    new=1
+    for i in wn:
+        new*=i
+    return new
+    
+
+
+wn=list(map(int,input().split()))
+print(multiple(wn))

@@ -1,0 +1,11 @@
+n = int(input())
+ls = []
+ans = []
+for i in range(n):
+	k = input().split()
+	if(k[0] == '1'):
+		ls.append(k[1])
+	else:
+		ans.append(ls.pop(0))
+for i in ans:
+	print(i, end = ' ')

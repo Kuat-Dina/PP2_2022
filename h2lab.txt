@@ -1,0 +1,11 @@
+x, y = map(int, input().split())
+n = int(input())
+ls = []
+for i in range(n):
+	a, b = map(int, input().split())
+	c = ((x-a) ** 2 + (y-b) ** 2) ** (1/2)
+	ls.append((c, a, b))
+	ls.sort()
+for i in ls:
+	c, a, b = i
+	print(a, b)

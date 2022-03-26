@@ -1,0 +1,14 @@
+n = int(input())
+ans = []
+for i in range(n):
+	s = input()
+	up = any(map(lambda x: x.isupper(), s))
+	low = any(map(lambda x: x.islower(), s))
+	num = any(map(lambda x: x.isdigit(), s))
+	if up+low+num == 3:
+		ans.append(s);
+ans = list(set(ans))
+ans.sort()
+print(len(ans))
+for i in ans:
+	print(i)

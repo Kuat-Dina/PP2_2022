@@ -1,0 +1,13 @@
+s = input().split()
+ans = []
+for i in s:
+	ss = ''
+	for j in i:
+		if j.isalpha():
+			ss += j
+	ans.append(ss)
+ans = list(set(ans))
+ans.sort()
+print(len(ans))
+for i in ans:
+	print(i)
